@@ -1,5 +1,5 @@
 class RegistrationController < ApplicationController
-    def def new
+    def new
         @user = user.new
     end
 end
