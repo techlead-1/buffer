@@ -7,6 +7,7 @@ class RegistrationController < ApplicationController
         @user = User.new(user_params)
         if @user.save
             redirect_to root_path, notice: "Succesfully created an account on Buffer App"
+            session[:user_id] = @user.id
         else
             render :new
         end
