@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 #  forgot password
  get "forget/password", to: "forget_password#edit"
  post "forget/password", to: "forget_password#create"
+ get "forget/password/edit", to: "forget_password#new"
+ get "forget/password/edit", to: "forget_password#update"
 
 #  registration
  get "sign_up", to: "registration#new"
