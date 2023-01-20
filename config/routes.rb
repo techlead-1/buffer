@@ -6,6 +6,10 @@ Rails.application.routes.draw do
  get "update_profile", to: "update#edit"
  patch "update_profile", to: "update#update"
 
+#  forgot password
+ get "forget/password", to: "forget_password#edit"
+ post "forget/password", to: "forget_password#create"
+
 #  registration
  get "sign_up", to: "registration#new"
  post "sign_up", to: "registration#create"
